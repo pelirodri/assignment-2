@@ -1,0 +1,231 @@
+@import url("roboto.css");
+
+:root {
+	--primary-color: #1f2937;
+	--secondary-color: #f9faf8;
+	--tertiary-color: #e5e7eb;
+	--quaternary-color: #3882f6;
+}
+
+body {
+	margin: 0;
+	font-family: "Roboto";
+}
+
+header {
+	background: var(--primary-color);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav {
+	top: 0;
+	position: fixed;
+	background: var(--primary-color);
+	width: 100vw;
+	height: 50px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+footer {
+	height: 70px;
+	background: var(--primary-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--secondary-color);
+
+}
+
+.github-button {
+	color: var(--secondary-color);
+	border-radius: 5px;
+	font-size: 18px;
+	padding: 5px 20px;
+	cursor: pointer;
+}
+
+.interest-image {
+	width: 100%;
+}
+
+#brand-name {
+	font-size: 24px;
+	color: var(--secondary-color);
+}
+
+#nav-links-container {
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+	gap: 15px;
+}
+
+#nav-links-container a {
+	font-size: 18px;
+	color: var(--tertiary-color);
+}
+
+#nav-links-container a:hover {
+	color: var(--primary-color);
+	background: var(--tertiary-color);
+}
+
+#hero-container {
+	width: 95vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+}
+
+#hero-intro {
+	max-width: 32vw;
+}
+
+#hero-intro h1 {
+	font-size: 48px;
+	font-weight: bold;
+	color: var(--secondary-color);
+	margin: 0;
+}
+
+#hero-intro p {
+	font-size: 18px;
+	color: var(--tertiary-color);
+	margin: 10px 0;
+}
+
+#hero-intro button {
+	background: var(--quaternary-color);
+	border: solid 2px var(--primary-color);
+}
+
+#hero-intro button:hover {
+	background: var(--primary-color);
+	border: 2px solid var(--quaternary-color);
+}
+
+#hero-img {
+	height: 250px;
+}
+
+#interest-images-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+#interest-images-container h2 {
+	font-size: 36px;
+	font-weight: bold;
+	color: var(--primary-color);
+}
+
+#interest-images {
+	width: 95%;
+	display: grid;
+	grid-template-columns: 150px;
+	row-gap: 12.5px;
+	justify-content: center;
+	align-items: center;
+}
+
+#interest-images figure {
+	margin: 0;
+}
+
+#interest-images figcaption {
+	text-align: center;
+	font-size: 16.5px;
+	color: #aaa;
+	margin-top: 5px;
+}
+
+#quote-container {
+	height: 100vh;
+	background: var(--tertiary-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#quote-container p {
+	font-size: 36px;
+	font-weight: light;
+	color: var(--primary-color);
+}
+
+#quote-container figcaption {
+	text-align: right;
+}
+
+#github-prompt-container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#github-prompt {
+	color: var(--secondary-color);
+	background: var(--quaternary-color);
+	border-radius: 10px;
+	width: 75vw;
+	height: 20vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 25px;
+	padding: 0 15px;
+}
+
+#github-prompt-text h3 {
+	margin: 0;
+}
+
+#github-prompt-text p {
+	margin: 0;
+	color: #ddd;
+}
+
+#github-prompt button {
+	background: rgba(0, 0, 0, 0);
+	border: 2px solid var(--secondary-color);
+}
+
+#github-prompt button:hover {
+	background: var(--primary-color);
+}
+
+@media only screen and (min-width: 562px) {
+	#interest-images {
+		grid-template-columns: repeat(2, 150px);
+		column-gap: 50px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	#interest-images {
+		grid-template-columns: repeat(3, 150px);
+		column-gap: 50px;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	#interest-images {
+		grid-template-columns: repeat(4, 150px);
+		column-gap: 50px;
+	}
+}
